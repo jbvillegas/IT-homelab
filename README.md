@@ -4,7 +4,7 @@
 This project is a complete virtualized IT infraestructure built from scratch to simulate an enterprise environment. Designed to demonstrate hands-on skills in virtualization, Windows Server administration, networking, security, and database management. 
 
 ## Architecture
-![Network Diagram](docs/NetworkDiagram.png)
+![Network Diagram](assets/NetworkDiagram.png)
 
 ## Components
 | Component | Details |
