@@ -1,0 +1,52 @@
+
+flowchart TB
+
+    Internet([Internet])
+
+    Router["Home Router / ISP Modem<br/>192.168.1.0/24"]
+
+    Internet --> Router
+
+    subgraph ESXi["VMware ESXi Host (Bare Metal)"]
+
+        subgraph Mgmt["Management vSwitch (vSwitch0)"]
+            ESXiMgmt["ESXi Management<br/>192.168.1.100"]
+        end
+
+        subgraph PF["pfSense Firewall"]
+
+            PFWAN["WAN Interface<br/>192.168.1.160<br/>DHCP"]
+            PFLAN["LAN Interface<br/>192.168.10.1<br/>Gateway / NAT / DHCP"]
+            VPN["OpenVPN / WireGuard"]
+
+            PFWAN --> PFLAN
+            VPN --- PFLAN
+        end
+
+        subgraph LAB["Internal Lab Network (vSwitch1)<br/>192.168.10.0/24"]
+
+            DC["Windows Server 2022 (DC)<br/>192.168.10.10<br/>AD / DNS / DHCP"]
+
+            SQL["SQL Server 2022<br/>192.168.10.20"]
+
+            Ubuntu["Ubuntu Server 22.04<br/>192.168.10.30<br/>Wiki / Git"]
+
+            Extra["Extra VMs<br/>192.168.10.50+"]
+
+            DC --> SQL
+            DC --> Ubuntu
+            DC --> Extra
+        end
+
+    end
+
+    Router --> PFWAN
+
+    PFLAN --> DC
+    PFLAN --> SQL
+    PFLAN --> Ubuntu
+    PFLAN --> Extra
+
+    Remote["Remote User<br/>Laptop / Phone"]
+
+    Remote -. VPN Access .-> VPN
