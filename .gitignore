@@ -1,0 +1,26 @@
+# Large binary files (VMs, ISOs)
+*.vmdk
+*.vhd
+*.vhdx
+*.iso
+*.ova
+*.ovf
+*.bin
+
+# Password files / secrets
+*.pem
+*.key
+*.crt
+*.pfx
+*password*
+*secret*
+.env
+
+# Large logs
+*.log
+*.bak
+*.tmp
+
+# OS junk
+.DS_Store
+Thumbs.db
