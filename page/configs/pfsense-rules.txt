@@ -1,0 +1,39 @@
+# pfSense Firewall Rules - LAN Interface
+
+1. Anti-Lockout Rule (auto-added, keep enabled)
+
+    Protocol: TCP
+    Source: ANY
+    Destination: LAN address
+    Dest Port: 443 (or whatever your WebGUI port is)
+    Action: PASS
+
+
+2. Allow LAN to ANY
+
+    Protocol: ANY
+    Source: 192.168.10.0/24 (LAN net alias — not .1/24)
+    Destination: ANY
+    Gateway: Default
+    Log: Enabled
+    Action: PASS
+
+
+# pfSense Firewall Rules - WAN Interface
+
+1. Allow VPN (WireGuard/OpenVPN)
+
+    Protocol: UDP
+    Source: ANY
+    Dest Port: 51820 (WireGuard) or 1194 (OpenVPN)
+    Destination: WAN address
+    Log: Enabled
+    Action: PASS
+
+2. Default Deny (implicit, but make explicit if you want logging)
+
+    Protocol: ANY
+    Source: ANY
+    Destination: ANY
+    Log: Enabled
+    Action: DENY

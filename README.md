@@ -3,8 +3,12 @@
 ## Overview
 This project is a complete virtualized IT infraestructure built from scratch to simulate an enterprise environment. Designed to demonstrate hands-on skills in virtualization, Windows Server administration, networking, security, and database management. 
 
+   ![VMware](https://img.shields.io/badge/VMware-ESXi-607078)
+   ![Windows Server](https://img.shields.io/badge/Windows-Server_2022-0078D6)
+   ![pfSense](https://img.shields.io/badge/pfSense-2.7.0-000000)
+
 ## Architecture
-![Network Diagram](page/assets/assets/NetworkDiagram-Readme.png) 
+![Network Diagram](page/assets/NetworkDiagram-Readme.png) 
 
 ## Components
 | Component | Details |
