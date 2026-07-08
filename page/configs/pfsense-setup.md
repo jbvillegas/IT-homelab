@@ -49,7 +49,7 @@ The **qemu64** CPU type was selected to maximize compatibility with FreeBSD and 
 
 ## 2. Network Interface Configuration
 
-![VM Network Overview](page/assets/pfsense/01-vm-network-overview.png)
+![VM Network Overview](/page/assets/pfsense/01-vm-network-overview.png)
 
 Two virtual network interfaces were assigned to the pfSense virtual machine.
 
@@ -64,7 +64,7 @@ This configuration separates external network access from the internal laborator
 
 ## 3. Interface Status
 
-![pfSense Interface Status](page/assets/pfsense/02-interface-status.png)
+![pfSense Interface Status](/page/assets/pfsense/02-interface-status.png)
 
 After installation, pfSense successfully detected both network interfaces.
 
@@ -81,7 +81,7 @@ The WAN interface automatically obtained its address via DHCP while the LAN inte
 
 ## 4. Firewall Rule Configuration
 
-![Firewall Rule for WebGUI Access](page/assets/pfsense/03-webgui-firewall-rule.png)
+![Firewall Rule for WebGUI Access](/page/assets/pfsense/03-webgui-firewall-rule.png)
 
 To allow administration from the home network, a firewall rule was created permitting HTTPS access to the pfSense WebGUI.
 
