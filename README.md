@@ -13,7 +13,7 @@ This project is a complete virtualized IT infraestructure built from scratch to 
 ## Components
 | Component | Details |
 |-----------|---------|
-| **Hypervisor** | VMware ESXi 8.0 |
+| **Hypervisor** | Proxmox VE|
 | **Firewall / VPN** | pfSense CE with NAT, Port Forwarding, OpenVPN/WireGuard |
 | **Domain Controller** | Windows Server 2022 with Active Directory, DNS, DHCP |
 | **Database Server** | Microsoft SQL Server 2022 Express |
