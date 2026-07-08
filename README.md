@@ -12,7 +12,7 @@ This project is a complete virtualized IT infraestructure built from scratch to 
 ## Components
 | Component | Details |
 |-----------|---------|
-| **Hypervisor** | UTM MacOS Virtualization |
+| **Hypervisor** | Proxmox VE|
 | **Firewall / VPN** | pfSense CE with NAT, Port Forwarding, OpenVPN/WireGuard |
 | **Domain Controller** | Windows Server 2022 with Active Directory, DNS, DHCP |
 | **Database Server** | Microsoft SQL Server 2022 Express |
