@@ -1,9 +1,8 @@
-# Homelab - VMware ESXi Virtualization & Network Infraestructure
+# Homelab - Proxmox UTM Virtualization & Network Infraestructure
 
 ## Overview
 This project is a complete virtualized IT infraestructure built from scratch to simulate an enterprise environment. Designed to demonstrate hands-on skills in virtualization, Windows Server administration, networking, security, and database management. 
 
-   ![VMware](https://img.shields.io/badge/VMware-ESXi-607078)
    ![Windows Server](https://img.shields.io/badge/Windows-Server_2022-0078D6)
    ![pfSense](https://img.shields.io/badge/pfSense-2.7.0-000000)
 
@@ -13,7 +12,7 @@ This project is a complete virtualized IT infraestructure built from scratch to 
 ## Components
 | Component | Details |
 |-----------|---------|
-| **Hypervisor** | VMware ESXi 8.0 |
+| **Hypervisor** | UTM MacOS Virtualization |
 | **Firewall / VPN** | pfSense CE with NAT, Port Forwarding, OpenVPN/WireGuard |
 | **Domain Controller** | Windows Server 2022 with Active Directory, DNS, DHCP |
 | **Database Server** | Microsoft SQL Server 2022 Express |
