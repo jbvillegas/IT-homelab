@@ -12,7 +12,7 @@ This project is a complete virtualized IT infraestructure built from scratch to 
 ## Components
 | Component | Details |
 |-----------|---------|
-| **Hypervisor** | Proxmox VE|
+| **Hypervisor** | UTM (QEMU) on Apple Silicon (M4)|
 | **Firewall / VPN** | pfSense CE with NAT, Port Forwarding, OpenVPN/WireGuard |
 | **Domain Controller** | Windows Server 2022 with Active Directory, DNS, DHCP |
 | **Database Server** | Microsoft SQL Server 2022 Express |
