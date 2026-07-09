@@ -7,7 +7,7 @@ This project is a complete virtualized IT infraestructure built from scratch to 
    ![pfSense](https://img.shields.io/badge/pfSense-2.7.0-000000)
 
 ## Architecture
-![Network Diagram](page/assets/NetworkDiagram-Readme.png) 
+![Network Diagram](screenshots/diagrams/NetworkDiagram-Readme.png) 
 
 ## Components
 | Component | Details |
