@@ -29,7 +29,10 @@ This project is a complete virtualized IT infraestructure built from scratch to 
 - Full network documentation (diagrams, IP plan, troubleshooting guides)
 
 ## Guides
-- Here I will place the installation guides.
+- [Lab Inventory](docs/lab-inventory.md)
+- [Service Matrix](docs/service-matrix.md)
+- [Backup and Restore](docs/backup-restore.md)
+- [Validation Report](docs/validation-report.md)
 
 ## Validation Checklist
 Use this checklist after making changes to the lab or rebuilding any component.
@@ -58,7 +61,7 @@ Use this checklist after making changes to the lab or rebuilding any component.
 - Here I will place all the scripts.
 
 ## Screenshots
-- Here I will place all the screenshots.
+- Here I will place all the screenshots: [screenshots/](screenshots/)
 
 ## Skills Demonstrated
 - Virtualization (VMware ESXi)
