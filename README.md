@@ -31,6 +31,29 @@ This project is a complete virtualized IT infraestructure built from scratch to 
 ## Guides
 - Here I will place the installation guides.
 
+## Validation Checklist
+Use this checklist after making changes to the lab or rebuilding any component.
+
+### Completed / Verified
+- pfSense WAN connectivity is up and the internal interface is reachable.
+- pfSense WebGUI access works from the management network.
+- Firewall rules allow the intended traffic and keep default-deny behavior intact.
+- DNS resolves internal hostnames and forwards external queries correctly.
+- DHCP leases are being issued in the expected scope and subnet.
+- The domain controller can support Active Directory, DNS, and DHCP functions.
+- WireGuard remote access has been configured and verified from a client device.
+
+### In Progress / Planned
+- Proxmox host health and VM uptime checks.
+- Full OpenVPN deployment.
+- Dedicated internal subnet migration to `10.0.2.0/24`.
+- Port forwarding for additional internal services.
+- Syslog logging and automatic configuration backups.
+- Full off-network VPN test from an external connection.
+- SQL Server backup routines and verification on the server.
+- Linux server service checks.
+- Documentation, IP plan, and troubleshooting notes staying in sync with the current lab state.
+
 ## Scripts
 - Here I will place all the scripts.
 
