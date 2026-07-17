@@ -64,7 +64,7 @@ Use this checklist after making changes to the lab or rebuilding any component.
 - Here I will place all the screenshots: [screenshots/](screenshots/)
 
 ## Skills Demonstrated
-- Virtualization (VMware ESXi)
+- UTM (QEMU) on Apple Silicon (M4)
 - Windows Server Administration (AD, DNS, DHCP)
 - Networking (TCP/IP, Routing, Firewall, VPN)
 - Security (NAT, firewall rules, VPN encryption)
